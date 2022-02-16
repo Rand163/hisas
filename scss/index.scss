@@ -68,6 +68,7 @@ img {
     }
 
     a {
+      color: $black;
       border-bottom: 3px transparent solid;
       padding-bottom: 0.5rem;
       transition: border-color 0.5s;
@@ -79,6 +80,7 @@ img {
       }
     }
   }
+  // SHOWCASE
 
   &-mid {
     display: flex;
@@ -97,8 +99,8 @@ img {
       justify-items: center;
       justify-content: space-between;
       padding-top: 15px;
-      padding: 0 20px;
-
+      padding: 0 5px;
+      margin: 20px 0;
       transition: border-color 0.5s;
 
       .div {
@@ -106,10 +108,16 @@ img {
         justify-content: space-around;
         width: 138px;
         height: 169px;
-        margin: 1px 40px;
+        padding: 0 30px;
+        margin: 1px 60px;
         box-shadow: 0 5px 10px $shadow-orange;
       }
 
+      img {
+        width: 150px;
+        margin: 0 20px;
+        padding: 0 0px;
+      }
       img:hover {
         border-radius: 10px;
         box-shadow: 0 5px 10px $shadow-dark;

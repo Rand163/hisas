@@ -50,6 +50,7 @@ form {
     select {
       font-size: 14px;
       padding-right: 20px;
+      margin: 0;
       border: none;
       background: $box-light-grey;
       color: $medium-grey;
@@ -75,8 +76,6 @@ form {
 
         .fa-solid {
           color: $arrow-grey;
-          // width: 0px;
-
           .fa-sm {
             width: 9.15px;
             height: 7.16px;
@@ -96,10 +95,12 @@ button {
   color: $box-dark-blue;
   margin-top: 5px;
 }
+
 .next-step:hover {
   color: $box-light-grey;
   background: $box-dark-blue;
 }
+
 p {
   max-width: 450px;
   width: 100%;
@@ -109,76 +110,5 @@ p {
   text-align: center;
   span {
     color: $dark-orange;
-  }
-}
-
-// INDEX
-
-.btn {
-  button {
-    width: 130px;
-    height: 45px;
-    border-radius: 15px;
-    background: transparent;
-    color: $dark-grey;
-  }
-
-  .btn-login {
-    color: $dark-orange;
-    background: $light-orange;
-    transition: background 0.5s;
-
-    &:hover {
-      color: $white;
-      background: $dark-orange;
-      box-shadow: 0 5px 10px $shadow-orange;
-    }
-  }
-}
-
-input {
-  padding: 10px 20px;
-  margin: 40px 0;
-  width: 600px;
-  height: 50px;
-  border-radius: 15px;
-  background: #fff;
-  border: 2px solid #f2f2f2;
-  color: #1f1f1f;
-  font-weight: normal;
-  font-size: 18px;
-  text-align: right;
-}
-
-.custom-search {
-  position: relative;
-
-  i {
-    position: absolute;
-    left: 35%;
-    top: 43%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-  }
-}
-
-.showcase-right {
-  button {
-    width: 99px;
-    height: 55px;
-    border-radius: 15px;
-    background: #fff8d8;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    color: $light-yellow;
-    transition: background 0.5s;
-
-    &:hover {
-      color: $white;
-      background: $dark-yellow;
-      box-shadow: 0 5px 10px $shadow-yellow;
-    }
   }
 }

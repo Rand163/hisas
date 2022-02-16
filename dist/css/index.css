@@ -107,7 +107,7 @@ p {
 input {
   padding: 10px 20px;
   margin: 40px 0;
-  width: 600px;
+  max-width: 600px;
   height: 50px;
   border-radius: 15px;
   background: #fff;
@@ -121,14 +121,14 @@ input {
   position: relative; }
   .custom-search i {
     position: absolute;
-    left: 35%;
-    top: 43%;
+    left: 18%;
+    top: 45%;
     width: 20px;
     height: 20px;
     background: transparent; }
 
 .showcase-right button {
-  width: 99px;
+  max-width: 90px;
   height: 55px;
   border-radius: 15px;
   background: #fff8d8;
@@ -194,6 +194,7 @@ img {
         margin: 5px 20px;
         padding: 5px; }
     .showcase nav a {
+      color: #000;
       border-bottom: 3px transparent solid;
       padding-bottom: 0.5rem;
       transition: border-color 0.5s; }
@@ -214,15 +215,21 @@ img {
       justify-items: center;
       justify-content: space-between;
       padding-top: 15px;
-      padding: 0 20px;
+      padding: 0 5px;
+      margin: 20px 0;
       transition: border-color 0.5s; }
       .showcase-right-img .div {
         display: flex;
         justify-content: space-around;
         width: 138px;
         height: 169px;
-        margin: 1px 40px;
+        padding: 0 30px;
+        margin: 1px 60px;
         box-shadow: 0 5px 10px #f5b97df5; }
+      .showcase-right-img img {
+        width: 150px;
+        margin: 0 20px;
+        padding: 0 0px; }
       .showcase-right-img img:hover {
         border-radius: 10px;
         box-shadow: 0 5px 10px #e6dede; }
