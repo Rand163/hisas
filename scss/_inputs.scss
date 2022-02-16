@@ -113,6 +113,7 @@ p {
 }
 
 // INDEX
+
 .btn {
   button {
     width: 130px;
@@ -125,24 +126,44 @@ p {
   .btn-login {
     color: $dark-orange;
     background: $light-orange;
+    transition: background 0.5s;
+
+    &:hover {
+      color: $white;
+      background: $dark-orange;
+      box-shadow: 0 5px 10px $shadow-orange;
+    }
+  }
+}
+
+input {
+  padding: 10px 20px;
+  margin: 40px 0;
+  width: 600px;
+  height: 50px;
+  border-radius: 15px;
+  background: #fff;
+  border: 2px solid #f2f2f2;
+  color: #1f1f1f;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: right;
+}
+
+.custom-search {
+  position: relative;
+
+  i {
+    position: absolute;
+    left: 35%;
+    top: 43%;
+    width: 20px;
+    height: 20px;
+    background: transparent;
   }
 }
 
 .showcase-right {
-  input {
-    padding: 10px 20px;
-    margin: 40px 0;
-    width: 600px;
-    height: 50px;
-    border-radius: 15px;
-    background: #fff;
-    border: 2px solid #f2f2f2;
-    color: #1f1f1f;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: right;
-  }
-
   button {
     width: 99px;
     height: 55px;
@@ -151,6 +172,13 @@ p {
     font-weight: bold;
     font-size: 16px;
     text-align: center;
-    color: #ffd200;
+    color: $light-yellow;
+    transition: background 0.5s;
+
+    &:hover {
+      color: $white;
+      background: $dark-yellow;
+      box-shadow: 0 5px 10px $shadow-yellow;
+    }
   }
 }

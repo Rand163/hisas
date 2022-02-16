@@ -86,7 +86,7 @@ p {
   font-size: 16px;
   text-align: center; }
   p span {
-    color: #f57c00; }
+    color: #f7922e; }
 
 .btn button {
   width: 130px;
@@ -96,10 +96,15 @@ p {
   color: #1f1f1f; }
 
 .btn .btn-login {
-  color: #f57c00;
-  background: #fef2e5; }
+  color: #f7922e;
+  background: #fef2e5;
+  transition: background 0.5s; }
+  .btn .btn-login:hover {
+    color: #fff;
+    background: #f7922e;
+    box-shadow: 0 5px 10px #f5b97df5; }
 
-.showcase-right input {
+input {
   padding: 10px 20px;
   margin: 40px 0;
   width: 600px;
@@ -112,6 +117,16 @@ p {
   font-size: 18px;
   text-align: right; }
 
+.custom-search {
+  position: relative; }
+  .custom-search i {
+    position: absolute;
+    left: 35%;
+    top: 43%;
+    width: 20px;
+    height: 20px;
+    background: transparent; }
+
 .showcase-right button {
   width: 99px;
   height: 55px;
@@ -120,7 +135,12 @@ p {
   font-weight: bold;
   font-size: 16px;
   text-align: center;
-  color: #ffd200; }
+  color: #ffd200;
+  transition: background 0.5s; }
+  .showcase-right button:hover {
+    color: #fff;
+    background: #fde938;
+    box-shadow: 0 5px 10px #edf1a9; }
 
 * {
   box-sizing: border-box; }
@@ -134,11 +154,10 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 64px;
+  font-size: 60px;
   text-align: right;
   color: #1f1f1f;
-  padding-bottom: 1px;
-  margin-bottom: 5px; }
+  padding: 10px 0; }
 
 h2 {
   font-weight: bold;
@@ -156,7 +175,7 @@ img {
   width: 100%; }
 
 #logo {
-  width: 70px;
+  width: 100px;
   height: 70px; }
 
 .showcase {
@@ -179,31 +198,34 @@ img {
       padding-bottom: 0.5rem;
       transition: border-color 0.5s; }
       .showcase nav a:hover {
-        border-color: #f57c00; }
+        border-color: #f7922e; }
       .showcase nav a.current {
-        border-color: #f57c00; }
+        border-color: #f7922e; }
   .showcase-mid {
     display: flex;
     justify-content: space-around;
-    margin: 30px 5px;
+    margin: 130px 5px;
     padding: 5px; }
   .showcase-right {
     margin: 0;
-    padding: 10px 5px;
-    max-width: 800px; }
+    max-width: 700px; }
     .showcase-right-img {
       display: flex;
       justify-items: center;
       justify-content: space-between;
-      padding-top: 10px; }
+      padding-top: 15px;
+      padding: 0 20px;
+      transition: border-color 0.5s; }
       .showcase-right-img .div {
         display: flex;
         justify-content: space-around;
         width: 138px;
         height: 169px;
-        margin: 1px 40px; }
-      .showcase-right-img img {
-        padding: 0 20px; }
+        margin: 1px 40px;
+        box-shadow: 0 5px 10px #f5b97df5; }
+      .showcase-right-img img:hover {
+        border-radius: 10px;
+        box-shadow: 0 5px 10px #e6dede; }
   .showcase-left img {
     margin-top: 30px;
     max-width: 450px;
