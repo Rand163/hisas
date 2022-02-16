@@ -1,6 +1,6 @@
 @import "colors";
 
-@media (max-width: 520px) {
+@media screen and (max-width: 520px) {
   h2 {
     margin: 30px 5px auto;
   }
@@ -24,28 +24,18 @@
     }
   }
 
-  .auth-form {
-    .custom-select {
-      position: relative;
+  .steps-text {
+    font-size: 14px;
+  }
 
-      .custom-arrow {
-        position: absolute;
-        top: 15%;
-        right: 50%;
-        display: block;
-        height: 1rem;
-        width: 3rem;
-        pointer-events: none;
+  .custom-arrow {
+    top: 9% !important;
+    right: 91% !important;
+  }
+}
 
-        .fa-solid {
-          color: #bfbfbf;
-
-          .fa-sm {
-            width: 9.15px;
-            height: 7.16px;
-          }
-        }
-      }
-    }
+@media screen and (max-width: 290px) {
+  p {
+    font-size: 14px;
   }
 }
