@@ -47,23 +47,25 @@ img {
 }
 
 .container {
+  // max-width: 1600px;
   max-width: 100%;
   // padding: 1px;
 }
 
 // SHOWCASE
 .showcase {
-  height: 100vh;
   padding: 5px;
   // margin: 10px 0;
-  width: 100%;
+  max-width: 1600px;
+  margin: auto;
 
   nav {
+    max-width: 1700px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    margin-top: 20px;
+    margin: 10px auto;
 
     ul {
       display: flex;
@@ -92,45 +94,40 @@ img {
 
   &-mid {
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
     justify-content: space-between;
     align-items: center;
-    flex-grow: 1;
+    // flex-grow: 1;
     // margin: px;
     padding: 5px;
+    max-width: 1600px;
+    margin: 150px auto;
+    margin-bottom: 0;
   }
 
   &-right {
-    margin: 5px 40px;
+    margin: 10px 100px;
     padding: 10px 5px;
-    max-width: 900px;
     width: 100%;
 
     &-img {
       display: flex;
-      justify-items: center;
-      justify-content: space-between;
-      height: 130px;
-      // padding-top: 15px;
-      // padding: 0 5px;
+      width: 100%;
+      padding: 100px 20px;
       margin: 20px auto;
       transition: border-color 0.5s;
 
       .div {
         display: flex;
-        justify-content: space-around;
-        // width: 130px;
-        // height: 70px;
-        // padding: 0 30px;
-        // margin: 1px 60px;
+        justify-content: space-between;
         box-shadow: 0 5px 10px $shadow-orange;
+        margin: 20px 70px;
       }
 
       img {
-        width: 140px;
-        height: 195px;
-        margin: 1rem 1.1rem;
-        padding: 20px 0;
+        width: 170px;
+        height: 200px;
+        margin: 10px auto;
       }
 
       img:hover {
@@ -141,50 +138,49 @@ img {
   }
 
   &-left {
-    max-width: 850px;
+    max-width: 1600px;
     width: 100%;
-    margin: 10px;
+    // margin: 10px;
+
     img {
-      // margin-top: 20px;
       // max-width: 800px;
-      width: 100%;
-      max-height: 850px;
+      // width: 100%;
+      margin-top: -150px;
+      max-height: 1000px;
       height: 100%;
+      width: 700px;
     }
   }
 }
 
 // SCROLL ROWS
 #scroll {
-  height: 100vh;
-  width: 100%;
+  margin: auto;
+  max-width: 1600px;
 
   .blue {
     color: $card-blue;
   }
-
   .purple {
     color: $card-purple;
   }
-
   .yellow {
     color: $card-yellow;
   }
-
   .disc {
     list-style: disc;
   }
+
   .scroll {
-    margin: 30px 40px;
+    // margin: 30px 40px;
   }
 
   .before {
     font-size: 16px;
-    // margin-top: 5px;
     position: relative;
 
     p {
-      margin: 0;
+      // margin: 0;
     }
     &-first {
       text-align: left;
@@ -319,11 +315,10 @@ img {
 
 // EXPRIENCE CARDS
 #exprience {
-  height: 100vh;
-  max-width: 2200px;
+  max-width: 1600px;
   width: 100%;
   padding: 10px;
-
+  margin: auto;
 
   .exprience {
     &-text {
@@ -445,22 +440,22 @@ img {
 
 // FOOTER
 footer {
-  margin: 40px 90px;
+  max-width: 1600px;
+  margin: 40px auto;
   padding: 20px auto;
   height: 25vh;
-  
 
-   .footer{
-     padding-top: 30px;
+  .footer {
+    padding-top: 30px;
     display: flex;
     justify-content: space-around;
     align-content: center;
-   }
-  ul{
+  }
+  ul {
     margin: 0;
     padding: 0;
 
-    li{
+    li {
       line-height: 1.3rem;
     }
   }
@@ -473,7 +468,7 @@ footer {
     padding-top: 20px;
     img {
       width: 250px;
-      height:40px;
+      height: 40px;
     }
   }
 }
